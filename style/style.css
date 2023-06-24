@@ -1,0 +1,115 @@
+/* 
+  -- variables 
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa !important;
+}
+
+i {
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
+
+.colorBorder {
+  border-bottom: 2px solid #b2744c;
+}
+
+.fontColor {
+  color: #b2744c !important;
+}
+
+img {
+  max-width: 100% !important;
+}
+
+#nav-bar {
+  background-color: #b2744c !important;
+}
+#nav-bar div.container-fluid a.navbar-brand img {
+  width: 160px;
+}
+#nav-bar div.container-fluid #navbarSupportedContent ul.navbar-nav li.nav-item {
+  transition: 0.5s linear;
+}
+#nav-bar div.container-fluid #navbarSupportedContent ul.navbar-nav li.nav-item:hover {
+  background-color: White;
+}
+
+#hero {
+  background-image: url(../images/bc3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 74px);
+}
+#hero div .button-shopNow button {
+  transition: 0.5s linear;
+  border: none !important;
+}
+#hero div .button-shopNow button:hover {
+  background-color: #b2744c;
+  color: White;
+  border: none;
+}
+
+#learn-about-btn {
+  color: #b2744c;
+  border: 2px solid #b2744c;
+  transition: 0.5s linear;
+}
+#learn-about-btn:hover {
+  background-color: #b2744c;
+  color: White;
+}
+
+.Top-Categories .container .category-image img {
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.Top-Categories .container .category-image img:hover {
+  transform: translateY(-8px);
+}
+
+.Our-Gallary .container .card img {
+  cursor: pointer;
+}
+
+.Contact-Us .container {
+  overflow: hidden;
+  position: relative;
+}
+.Contact-Us .container .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 20%;
+  background-color: #b2744c;
+  height: 100%;
+}
+.Contact-Us .container .row {
+  z-index: 3;
+}
+
+section.footer {
+  background-color: #b2744c !important;
+}/*# sourceMappingURL=style.css.map */

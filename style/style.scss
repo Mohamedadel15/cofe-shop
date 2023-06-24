@@ -1,0 +1,140 @@
+/* 
+  -- variables 
+*/
+$maincolor: #b2744c;
+$whiteColor: White;
+$mainbgColor: #f8f9fa;
+
+$transtion-3: 0.5s linear;
+$transtion-2: 0.2s linear;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: $mainbgColor !important;
+}
+i{
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
+.colorBorder {
+  border-bottom: 2px solid $maincolor;
+}
+.fontColor {
+  color: $maincolor !important;
+}
+img {
+  max-width: 100% !important;
+}
+#nav-bar {
+  background-color: $maincolor !important;
+  div.container-fluid {
+    a.navbar-brand {
+      img {
+        width: 160px;
+      }
+    }
+    #navbarSupportedContent {
+      ul.navbar-nav {
+        li.nav-item {
+          transition: $transtion-3;
+          &:hover {
+            background-color: $whiteColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+#hero {
+  background-image: url(../images/bc3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 74px);
+  div {
+    .button-shopNow {
+      button {
+        transition: $transtion-3;
+        border: none !important;
+        &:hover {
+          background-color: $maincolor;
+          color: $whiteColor;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+#learn-about-btn {
+  color: $maincolor;
+  border: 2px solid $maincolor;
+  transition: $transtion-3;
+  &:hover {
+    background-color: $maincolor;
+    color: $whiteColor;
+  }
+}
+
+.Top-Categories {
+  .container {
+    .category-image {
+      img {
+        transition: $transtion-2;
+        cursor: pointer;
+        &:hover {
+          transform: translateY(-8px);
+        }
+      }
+    }
+  }
+}
+.Our-Gallary {
+  .container {
+    .card {
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.Contact-Us {
+  .container {
+    overflow: hidden;
+    position: relative;
+    .overlay{
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      width: 20%;
+      background-color: #b2744c;
+      height: 100%;
+    }
+    .row{
+      z-index: 3;
+    }
+  }
+}
+section.footer{
+  background-color: $maincolor !important;
+}
